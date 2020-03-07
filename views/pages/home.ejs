@@ -11,21 +11,25 @@
     </header>
     <main>
         <div class="content-width">
-            <h1>Teach09 - Node JS Form Handeling</h1>
+            <h1>Postal Rate Calculator</h1>
             <form  method="get" action="/process">
                 <fieldset>
-                    <legend>Choose your math operation:</legend>
-                    <input type="text" id="firstNumber" name="firstNumber">   
-                    <select id="operator" name="operator">
-                        <option value="addition">+</option>
-                        <option value="subtraction">-</option>
-                        <option value="multiplication">*</option>
-                        <option value="division">/</option>
-                    </select>        
-                    <input type="text" id="secondNumber" name="secondNumber">
+                    <legend>Inform the weight and choose the type of mail:</legend>
+
+                    <label for="mailWeight">Weight:</label>
+                    <input type="text" id="mailWeight" name="mailWeight">   
+
+                    <label for="typeOfMail">Type of Mail:</label>
+                    <select id="typeOfMail" name="typeOfMail">
+                        <option value="not-selected">(Select Your Option)</option>
+                        <option value="letter-stamped">Letters (Stamped)</option>
+                        <option value="letter-metered">Letters (Metered)</option>
+                        <option value="large-envelope">Large Envelopes (Flats)</option>
+                        <option value="first-class-package">First-Class Package Service—Retail</option>
+                    </select>
                     
                     
-                    <input type="submit" value="Compute">
+                    <input type="submit" value="Calculate Rate">
                     
                     
             
